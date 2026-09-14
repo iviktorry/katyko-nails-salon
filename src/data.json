@@ -4,7 +4,8 @@
     "title": "Nail Master",
     "subtitle": "Nails with love",
     "description": "Professional nail care in a cozy atmosphere. Book your appointment today.",
-    "buttonText": "Book now"
+    "buttonText": "Book now",
+    "navigation": ["about me", "works", "price", "contacts"]
   },
 
   "about": {
