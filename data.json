@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "name": "Anna Ivanova",
+    "title": "Nail Master",
+    "subtitle": "Nails with love",
+    "description": "Professional nail care in a cozy atmosphere. Book your appointment today.",
+    "buttonText": "Book now"
+  },
+
+  "about": {
+    "heading": "About me",
+    "text": "Hi! My name is Anna. I am a certified nail technician with over 5 years of experience. I love what I do and put care into every detail. My goal is to make you feel beautiful and confident.",
+    "photo": "/images/about.jpg"
+  },
+
+  "works": {
+    "heading": "Works",
+    "items": [
+      { "id": 1, "image": "/images/work1.jpg", "alt": "Nail design 1" },
+      { "id": 2, "image": "/images/work2.jpg", "alt": "Nail design 2" },
+      { "id": 3, "image": "/images/work3.jpg", "alt": "Nail design 3" },
+      { "id": 4, "image": "/images/work4.jpg", "alt": "Nail design 4" },
+      { "id": 5, "image": "/images/work5.jpg", "alt": "Nail design 5" },
+      { "id": 6, "image": "/images/work6.jpg", "alt": "Nail design 6" }
+    ]
+  },
+
+  "price": {
+    "heading": "Price",
+    "items": [
+      { "id": 1, "service": "Classic manicure", "price": "25$" },
+      { "id": 2, "service": "Manicure with gel polish", "price": "35$" },
+      { "id": 3, "service": "Nail extension", "price": "50$" },
+      { "id": 4, "service": "Pedicure", "price": "30$" },
+      { "id": 5, "service": "Nail art (per nail)", "price": "3$" },
+      { "id": 6, "service": "Nail removal", "price": "15$" }
+    ],
+    "note": "10% discount for first visit"
+  },
+
+  "contacts": {
+    "heading": "Contacts",
+    "instagram": "@anna.nails",
+    "telegram": "@annanails",
+    "phone": "+375 00 000-00-00",
+    "city": "Minsk, Belarus",
+    "buttonText": "Book via Instagram"
+  }
+}
