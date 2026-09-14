@@ -3,4 +3,7 @@
 @theme {
   --color-stone-600: #714f36;
   --color-stone-400: #c5a58e;
+
+  --font-heading: "Cormorant Garamond", serif;
+  --font-text: "Inter", sans-serif;
 }
