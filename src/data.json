@@ -35,7 +35,8 @@
       { "id": 5, "service": "Nail art (per nail)", "price": "3$" },
       { "id": 6, "service": "Nail removal", "price": "15$" }
     ],
-    "note": "10% discount for first visit"
+    "note": "10% discount for first visit",
+    "buttonText": "Book now"
   },
 
   "contacts": {

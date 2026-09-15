@@ -14,7 +14,7 @@ export default function Hero({ hero }) {
         {hero.subtitle}
       </h1>
       <p className="border-l pl-2">{hero.description}</p>
-      <button className="px-15 mt-6 py-3  bg-stone-600">
+      <button className="px-15 mt-6 py-3 bg-stone-600">
         {hero.buttonText}
       </button>
     </section>
