@@ -8,7 +8,7 @@ import Works from "./Works";
 
 export default function Main() {
   return (
-    <main className="h-full flex flex-col gap-10 text-white font-text">
+    <main className="h-full py-4 flex flex-col gap-10 text-white font-text">
       <Hero hero={hero} />
       <div className="px-6 py-8 flex flex-col gap-7 bg-white text-stone-600">
         <About about={about} />

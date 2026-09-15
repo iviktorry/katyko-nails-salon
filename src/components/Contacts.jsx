@@ -1,12 +1,12 @@
 export default function Contacts({ contacts }) {
   return (
-    <section>
-      <h2>{contacts.heading}</h2>
-      <div className="flex flex-col gap-4">
+    <section className="px-8 py-8 text-stone-400 bg-white flex flex-col gap-8">
+      <h2 className="self-start font-semibold text-stone-400 text-7xl font-heading">{contacts.heading}</h2>
+      <div className="flex flex-col gap-6">
         {contacts.items.map((item) => (
-          <button key={item.id}>
+          <button key={item.id} className="w-full ring-2 py-3 text-left px-3">
             {item.source}
-            <link rel="stylesheet" href={item.link} />
+            <link rel="stylesheet" href={item.link} className="w-full"/>
           </button>
         ))}
       </div>
