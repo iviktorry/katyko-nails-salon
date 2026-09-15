@@ -1,5 +1,6 @@
 import { hero, about, works, price, contacts } from "../data.json";
 import About from "./About";
+import Contacts from "./Contacts";
 import Hero from "./Hero";
 import Price from "./Price";
 import Works from "./Works";
@@ -14,7 +15,7 @@ export default function Main() {
         <Works works={works} />
       </div>
       <Price price={price} />
-      <section>{contacts.heading}</section>
+      <Contacts contacts={contacts} />
     </main>
   );
 }

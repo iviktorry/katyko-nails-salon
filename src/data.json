@@ -41,10 +41,11 @@
 
   "contacts": {
     "heading": "Contacts",
-    "instagram": "@anna.nails",
-    "telegram": "@annanails",
-    "phone": "+375 00 000-00-00",
-    "city": "Minsk, Belarus",
-    "buttonText": "Book via Instagram"
+    "items": [
+      { "id": 1, "source": "instagram", "link": "#" },
+      { "id": 2, "source": "telegram", "link": "#" },
+      { "id": 3, "source": "instagram", "link": "#" }
+    ],
+    "city": "Minsk, Belarus"
   }
 }
