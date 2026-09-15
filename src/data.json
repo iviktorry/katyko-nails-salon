@@ -20,11 +20,9 @@
     "items": [
       { "id": 1, "image": "/images/work1.jpg", "alt": "Nail design 1" },
       { "id": 2, "image": "/images/work2.jpg", "alt": "Nail design 2" },
-      { "id": 3, "image": "/images/work3.jpg", "alt": "Nail design 3" },
-      { "id": 4, "image": "/images/work4.jpg", "alt": "Nail design 4" },
-      { "id": 5, "image": "/images/work5.jpg", "alt": "Nail design 5" },
-      { "id": 6, "image": "/images/work6.jpg", "alt": "Nail design 6" }
-    ]
+      { "id": 3, "image": "/images/work3.jpg", "alt": "Nail design 3" }
+    ],
+    "buttonText": "Watch more"
   },
 
   "price": {
