@@ -1,7 +1,7 @@
 export default function Hero({ hero }) {
   // {navigation, image, subtitle, description, buttonText}
   return (
-    <section className="px-6 flex flex-col gap-0 items-center font-extralight">
+    <section className="px-6 pb-8 flex flex-col gap-0 items-center ">
       <nav>
         <ul className="flex justify-center gap-4">
           {hero.navigation.map((item) => (
