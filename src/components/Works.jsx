@@ -1,6 +1,6 @@
 export default function Works({ works }) {
   return (
-    <section className="flex flex-col items-center gap-6 pt-8">
+    <section id="works" className="flex flex-col items-center gap-6 pt-8">
       <h2 className="self-start font-semibold text-stone-400 text-7xl font-heading">
         {works.heading}
       </h2>

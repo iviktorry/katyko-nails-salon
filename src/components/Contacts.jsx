@@ -1,6 +1,9 @@
 export default function Contacts({ contacts }) {
   return (
-    <section className="px-8 py-8 text-stone-400 bg-white flex flex-col gap-8">
+    <section
+      id="contacts"
+      className="px-8 py-8 text-stone-400 bg-white flex flex-col gap-8"
+    >
       <h2 className="self-start font-semibold text-stone-400 text-7xl font-heading">
         {contacts.heading}
       </h2>

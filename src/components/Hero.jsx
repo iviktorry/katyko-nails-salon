@@ -5,7 +5,9 @@ export default function Hero({ hero }) {
       <nav>
         <ul className="flex justify-center gap-4">
           {hero.navigation.map((item) => (
-            <span key={item}>{item}</span>
+            <li key={item}>
+              <a href={`#${item.link}`}>{item.text}</a>
+            </li>
           ))}
         </ul>
       </nav>

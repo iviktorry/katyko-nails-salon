@@ -5,7 +5,12 @@
     "subtitle": "Nails with love",
     "description": "Professional nail care in a cozy atmosphere. Book your appointment today.",
     "buttonText": "Book now",
-    "navigation": ["about me", "works", "price", "contacts"],
+    "navigation": [
+      { "text": "about me", "link": "about" },
+      { "text": "works", "link": "works" },
+      { "text": "price", "link": "price" },
+      { "text": "contacts", "link": "contacts" }
+    ],
     "image": "/images/hero-nails.jpg"
   },
 

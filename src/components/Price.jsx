@@ -2,7 +2,7 @@ import Sparkles from "./Sparkles";
 
 export default function Price({ price }) {
   return (
-    <section className="flex flex-col items-center pt-4 pb-8">
+    <section id="price" className="flex flex-col items-center pt-4 pb-8">
       <div className="flex w-full justify-between pl-4">
         <Sparkles />
         <h2 className="font-semibold text-white text-7xl font-heading">
