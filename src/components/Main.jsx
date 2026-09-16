@@ -8,14 +8,16 @@ import Works from "./Works";
 
 export default function Main() {
   return (
-    <main className="h-full py-4 text-white font-text font-light">
+    <main className="h-full px-4 md:px-14 py-4 text-white font-text font-light lg:text-xl">
       <Hero hero={hero} />
-      <div className="px-6 py-8 bg-white text-stone-600">
+      <div className="py-8 bg-white text-stone-600">
         <About about={about} />
         <Works works={works} />
       </div>
       <Price price={price} />
-      <Contacts contacts={contacts} />
+      <div className="py-8 bg-white">
+        <Contacts contacts={contacts} />
+      </div>
     </main>
   );
 }
