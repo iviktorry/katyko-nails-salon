@@ -1,3 +1,5 @@
+import Sparkles from "./Sparkles";
+
 export default function Hero({ hero }) {
   // {navigation, image, subtitle, description, buttonText}
   return (
@@ -11,7 +13,12 @@ export default function Hero({ hero }) {
           ))}
         </ul>
       </nav>
-      <img src={hero.image} className="pt-15 max-w-lg w-[70%]" alt="" />
+      <div className="relative pt-15 max-w-lg w-[70%]">
+        <img src={hero.image} alt="" />
+        <div className="absolute top-2 -right-10">
+          <Sparkles />
+        </div>
+      </div>
       <h1 className="text-7xl relative self-start pl-2 -top-11 max-w-[90%] font-semibold font-heading">
         {hero.subtitle}
       </h1>

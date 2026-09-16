@@ -1,6 +1,6 @@
 export default function Sparkles() {
   return (
-    <div className="relative">
+    <div className="relative h-23 w-23">
       <svg
         viewBox="0 0 24 24"
         fill="none"
