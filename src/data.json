@@ -42,9 +42,13 @@
   "contacts": {
     "heading": "Contacts",
     "items": [
-      { "id": 1, "source": "instagram", "link": "#" },
-      { "id": 2, "source": "telegram", "link": "#" },
-      { "id": 3, "source": "instagram", "link": "#" }
+      {
+        "id": 1,
+        "source": "instagram",
+        "link": "https://www.instagram.com/katyko_nails_minsk?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+      },
+      { "id": 2, "source": "telegram", "link": "https://t.me/Katyko_nails" },
+      { "id": 3, "source": "+375 (29) 186-30-88", "link": "tel:+375291863088" }
     ],
     "city": "Minsk, Belarus"
   }
