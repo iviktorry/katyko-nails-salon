@@ -74,8 +74,7 @@
         "source": "Instagram",
         "link": "https://www.instagram.com/katyko_nails_minsk?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
       },
-      { "id": 2, "source": "Telegram", "link": "https://t.me/Katyko_nails" },
-      { "id": 3, "source": "+375 (29) 186-30-88", "link": "tel:+375291863088" }
+      { "id": 2, "source": "Telegram", "link": "https://t.me/Katyko_nails" }
     ],
     "city": "Minsk, Belarus",
     "text": "Book via options"

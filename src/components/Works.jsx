@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Button from "./Button";
+import { useTranslation } from "react-i18next";
 
 export default function Works({ works }) {
+  const { t } = useTranslation();
   const [showAll, setShowAll] = useState(false);
 
   return (
     <section id="works" className="px-6 pt-8 flex flex-col items-center gap-6">
       <h2 className="self-start font-bold text-stone-400 text-7xl font-heading lg:text-8xl">
-        {works.heading}
+        {t("works.heading")}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4">
         {works.items.map((item, index) => {
@@ -37,7 +39,9 @@ export default function Works({ works }) {
       </div>
       <Button
         onClick={() => setShowAll((prev) => !prev)}
-        text={showAll ? works.buttonTextOpened : works.buttonTextClosed}
+        text={
+          showAll ? t("works.buttonTextOpened") : t("works.buttonTextClosed")
+        }
         style="text-white bg-stone-400 hover:bg-stone-300"
       />
     </section>

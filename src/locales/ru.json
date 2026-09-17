@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "name": "Анна Иванова",
+    "title": "Мастер маникюра",
+    "subtitle": "Ногти с любовью",
+    "description": "Профессиональный уход за ногтями в уютной атмосфере. Запишитесь на приём сегодня.",
+    "buttonText": "Записаться",
+    "navigation": [
+      { "text": "обо мне", "link": "about" },
+      { "text": "работы", "link": "works" },
+      { "text": "прайс", "link": "price" },
+      { "text": "контакты", "link": "contacts" }
+    ],
+    "image": "/images/hero-nails.jpg"
+  },
+
+  "about": {
+    "heading": "Обо мне",
+    "text": "Привет! Меня зовут Анна. Я сертифицированный мастер маникюра с опытом более 5 лет. Я люблю своё дело и вкладываю душу в каждую деталь. Моя цель — сделать тебя красивой и уверенной.",
+    "photo": "/images/about.jpg",
+    "items": [
+      { "id": 1, "title": "5+", "text": "лет опыта" },
+      { "id": 2, "title": "200+", "text": "довольных клиентов" },
+      { "id": 3, "title": "100%", "text": "натуральные материалы" }
+    ]
+  },
+
+  "works": {
+    "heading": "Работы",
+    "items": [
+      { "id": 1, "image": "/images/work1.jpg", "alt": "Дизайн ногтей 1" },
+      { "id": 2, "image": "/images/work2.jpg", "alt": "Дизайн ногтей 2" },
+      { "id": 3, "image": "/images/work3.jpg", "alt": "Дизайн ногтей 3" },
+      { "id": 4, "image": "/images/work4.jpg", "alt": "Дизайн ногтей 4" },
+      { "id": 5, "image": "/images/work5.jpg", "alt": "Дизайн ногтей 5" },
+      { "id": 6, "image": "/images/work6.jpg", "alt": "Дизайн ногтей 6" },
+      { "id": 7, "image": "/images/work7.jpg", "alt": "Дизайн ногтей 7" },
+      { "id": 8, "image": "/images/work8.jpg", "alt": "Дизайн ногтей 8" },
+      { "id": 9, "image": "/images/work9.jpg", "alt": "Дизайн ногтей 9" },
+      { "id": 10, "image": "/images/work10.jpg", "alt": "Дизайн ногтей 10" },
+      { "id": 11, "image": "/images/work11.jpg", "alt": "Дизайн ногтей 11" },
+      { "id": 12, "image": "/images/work12.jpg", "alt": "Дизайн ногтей 12" },
+      { "id": 13, "image": "/images/work13.jpg", "alt": "Дизайн ногтей 13" }
+    ],
+    "buttonTextClosed": "Показать ещё",
+    "buttonTextOpened": "Скрыть"
+  },
+
+  "price": {
+    "heading": "Прайс",
+    "items": [
+      { "id": 1, "service": "Классический маникюр", "price": "25$" },
+      { "id": 2, "service": "Маникюр с гель-лаком", "price": "35$" },
+      { "id": 3, "service": "Классический маникюр", "price": "25$" },
+      { "id": 4, "service": "Наращивание ногтей", "price": "50$" },
+      { "id": 5, "service": "Наращивание ногтей", "price": "50$" },
+      { "id": 6, "service": "Маникюр с гель-лаком", "price": "35$" },
+      { "id": 7, "service": "Педикюр", "price": "30$" },
+      { "id": 8, "service": "Дизайн (за ноготь)", "price": "3$" },
+      { "id": 9, "service": "Педикюр", "price": "30$" },
+      { "id": 10, "service": "Педикюр", "price": "30$" },
+      { "id": 11, "service": "Снятие покрытия", "price": "15$" },
+      { "id": 12, "service": "Снятие покрытия", "price": "15$" }
+    ],
+    "note": "Скидка 10% на первое посещение",
+    "buttonText": "Записаться"
+  },
+
+  "contacts": {
+    "heading": "Контакты",
+    "items": [
+      {
+        "id": 1,
+        "source": "Инстаграмм",
+        "link": "https://www.instagram.com/katyko_nails_minsk?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+      },
+      { "id": 2, "source": "Телеграмм", "link": "https://t.me/Katyko_nails" }
+    ],
+    "city": "Минск, Беларусь",
+    "text": "Запишитесь через удобный мессенджер"
+  }
+}

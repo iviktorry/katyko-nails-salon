@@ -1,21 +1,28 @@
 import Button from "./Button";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Sparkles from "./Sparkles";
+import { useTranslation } from "react-i18next";
 
 export default function Hero({ hero }) {
+  const { t } = useTranslation();
+  const items = t("hero.navigation", { returnObjects: true });
   return (
     <section className=" pb-8 flex flex-col gap-0 items-center ">
-      <nav className="md:self-end">
-        <ul className="flex justify-center gap-4">
-          {hero.navigation.map((item) => (
-            <li
-              key={item.link}
-              className="hover:scale-107 transition-all deration-300"
-            >
-              <a href={`#${item.link}`}>{item.text}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className="flex justify-between w-full">
+        <nav className="md:self-end">
+          <ul className="flex justify-center gap-4">
+            {items.map((item) => (
+              <li
+                key={item.link}
+                className="hover:scale-107 transition-all deration-300"
+              >
+                <a href={`#${item.link}`}>{item.text}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <LanguageSwitcher />
+      </div>
       <div className="flex flex-col items-center md:flex-row-reverse md:gap-6 md:justify-between md:w-full">
         <div className="relative pt-15 max-w-lg w-[70%] md:w-auto">
           <img
@@ -29,11 +36,11 @@ export default function Hero({ hero }) {
         </div>
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-7xl lg:text-8xl relative self-start pl-2 -top-11 max-w-[90%] md:p-0 md:top-0 md:pb-4 font-bold font-heading">
-            {hero.subtitle}
+            {t("hero.subtitle")}
           </h1>
-          <p className="border-l pl-2">{hero.description}</p>
+          <p className="border-l pl-2">{t("hero.description")}</p>
           <Button
-            text={hero.buttonText}
+            text={t("hero.buttonText")}
             style="bg-stone-600 hover:bg-stone-500 mt-6"
           />
         </div>

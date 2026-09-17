@@ -1,4 +1,4 @@
-import { hero, about, works, price, contacts } from "../data.json";
+import { hero, about, works, price, contacts } from "../locales/en.json";
 import About from "./About";
 import Contacts from "./Contacts";
 import Hero from "./Hero";
@@ -14,7 +14,7 @@ export default function Main() {
         <Works works={works} />
       </div>
       <Price price={price} />
-      <div className="py-8 bg-white">
+      <div className="py-4 bg-white">
         <Contacts contacts={contacts} />
       </div>
     </main>
