@@ -1,21 +1,44 @@
+import { useState } from "react";
+
 export default function Works({ works }) {
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <section id="works" className="px-6 pt-8 flex flex-col items-center gap-6">
       <h2 className="self-start font-bold text-stone-400 text-7xl font-heading lg:text-8xl">
         {works.heading}
       </h2>
-      <div className="grid grid-cols-2 gap-2">
-        {works.items.map((item, index) => (
-          <div
-            key={item.id}
-            className={`overflow-hidden ${index === 1 ? "translate-y-7" : ""}`}
-          >
-            <img src={item.image} className="object-cover max-h-90" alt={item.alt} />
-          </div>
-        ))}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4">
+        {works.items.map((item, index) => {
+          const getColumnsNumber = showAll
+            ? "block"
+            : index < 2
+              ? "block"
+              : index === 2
+                ? "hidden md:block"
+                : index < 5
+                  ? "hidden lg:block"
+                  : "hidden";
+          return (
+            <div
+              key={item.id}
+              className={`${getColumnsNumber} self-center aspect-3/4  object-cover overflow-hidden`}
+              // max-w-45 md:max-h-60 lg:max-w-60 lg:max-h-80
+            >
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="w-full h-full object-cover hover:scale-105 transition-all duration-300"
+              />
+            </div>
+          );
+        })}
       </div>
-      <button className="px-15 py-3 text-white bg-stone-400">
-        {works.buttonText}
+      <button
+        onClick={() => setShowAll((prev) => !prev)}
+        className="w-48 md:w-60 py-3 text-white bg-stone-400"
+      >
+        {showAll ? works.buttonTextOpened : works.buttonTextClosed}
       </button>
     </section>
   );

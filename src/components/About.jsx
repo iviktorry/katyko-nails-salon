@@ -23,7 +23,7 @@ export default function About({ about }) {
                 <p className="text-3xl font-heading font-bold text-stone-400">
                   {item.title}
                 </p>
-                <p className="">{item.text}</p>
+                <p>{item.text}</p>
               </li>
             ))}
           </ul>

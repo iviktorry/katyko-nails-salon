@@ -8,7 +8,7 @@ export default function Contacts({ contacts }) {
         <h2 className="pl-8 md:pl-6 lg:pl-12 self-start font-bold text-stone-400 text-7xl lg:text-8xl font-heading">
           {contacts.heading}
         </h2>
-        <div className="h-0.5 mt-4 mb-8 w-40 bg-stone-400 self-end md:self-start"></div>
+        <div className="h-0.5 mt-4 mb-8 w-40 bg-stone-400 self-end md:self-start md:w-50"></div>
 
         <p className="pl-6 lg:pl-12">{contacts.city}</p>
         <p className="pl-6 lg:pl-12 pb-4">{contacts.text}</p>
