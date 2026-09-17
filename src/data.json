@@ -17,7 +17,12 @@
   "about": {
     "heading": "About me",
     "text": "Hi! My name is Anna. I am a certified nail technician with over 5 years of experience. I love what I do and put care into every detail. My goal is to make you feel beautiful and confident.",
-    "photo": "/images/about.jpg"
+    "photo": "/images/about.jpg",
+    "items": [
+      { "id": 1, "title": "5+", "text": "years of experience" },
+      { "id": 2, "title": "200+", "text": "happy clients" },
+      { "id": 3, "title": "100%", "text": "natural materials" }
+    ]
   },
 
   "works": {
@@ -49,10 +54,10 @@
     "items": [
       {
         "id": 1,
-        "source": "instagram",
+        "source": "Instagram",
         "link": "https://www.instagram.com/katyko_nails_minsk?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
       },
-      { "id": 2, "source": "telegram", "link": "https://t.me/Katyko_nails" },
+      { "id": 2, "source": "Telegram", "link": "https://t.me/Katyko_nails" },
       { "id": 3, "source": "+375 (29) 186-30-88", "link": "tel:+375291863088" }
     ],
     "city": "Minsk, Belarus",
