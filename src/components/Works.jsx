@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function Works({ works }) {
   const [showAll, setShowAll] = useState(false);
@@ -34,12 +35,11 @@ export default function Works({ works }) {
           );
         })}
       </div>
-      <button
+      <Button
         onClick={() => setShowAll((prev) => !prev)}
-        className="w-48 md:w-60 py-3 text-white bg-stone-400"
-      >
-        {showAll ? works.buttonTextOpened : works.buttonTextClosed}
-      </button>
+        text={showAll ? works.buttonTextOpened : works.buttonTextClosed}
+        style="text-white bg-stone-400 hover:bg-stone-300"
+      />
     </section>
   );
 }

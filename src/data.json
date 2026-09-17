@@ -51,15 +51,16 @@
     "items": [
       { "id": 1, "service": "Classic manicure", "price": "25$" },
       { "id": 2, "service": "Manicure with gel polish", "price": "35$" },
-      { "id": 1, "service": "Classic manicure", "price": "25$" },
-      { "id": 3, "service": "Nail extension", "price": "50$" },
-      { "id": 3, "service": "Nail extension", "price": "50$" },
-      { "id": 2, "service": "Manicure with gel polish", "price": "35$" },
-      { "id": 4, "service": "Pedicure", "price": "30$" },
-      { "id": 5, "service": "Nail art (per nail)", "price": "3$" },
-      { "id": 4, "service": "Pedicure", "price": "30$" },
-      { "id": 4, "service": "Pedicure", "price": "30$" },
-      { "id": 6, "service": "Nail removal", "price": "15$" }
+      { "id": 3, "service": "Classic manicure", "price": "25$" },
+      { "id": 4, "service": "Nail extension", "price": "50$" },
+      { "id": 5, "service": "Nail extension", "price": "50$" },
+      { "id": 6, "service": "Manicure with gel polish", "price": "35$" },
+      { "id": 7, "service": "Pedicure", "price": "30$" },
+      { "id": 8, "service": "Nail art (per nail)", "price": "3$" },
+      { "id": 9, "service": "Pedicure", "price": "30$" },
+      { "id": 10, "service": "Pedicure", "price": "30$" },
+      { "id": 11, "service": "Nail removal", "price": "15$" },
+      { "id": 12, "service": "Nail removal", "price": "15$" }
     ],
     "note": "10% discount for first visit",
     "buttonText": "Book now"
@@ -77,6 +78,6 @@
       { "id": 3, "source": "+375 (29) 186-30-88", "link": "tel:+375291863088" }
     ],
     "city": "Minsk, Belarus",
-    "text": "Book via options below"
+    "text": "Book via options"
   }
 }

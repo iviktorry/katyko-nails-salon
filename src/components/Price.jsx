@@ -1,3 +1,4 @@
+import Button from "./Button";
 import Sparkles from "./Sparkles";
 
 export default function Price({ price }) {
@@ -19,9 +20,10 @@ export default function Price({ price }) {
         ))}
       </ul>
       <p>{price.note}</p>
-      <button className="px-15 mt-6 py-3 bg-stone-600">
-        {price.buttonText}
-      </button>
+      <Button
+        style="mt-6 bg-stone-600 hover:bg-stone-500"
+        text={price.buttonText}
+      />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import Button from "./Button";
 import Sparkles from "./Sparkles";
 
 export default function Hero({ hero }) {
@@ -6,7 +7,10 @@ export default function Hero({ hero }) {
       <nav className="md:self-end">
         <ul className="flex justify-center gap-4">
           {hero.navigation.map((item) => (
-            <li key={item.link}>
+            <li
+              key={item.link}
+              className="hover:scale-107 transition-all deration-300"
+            >
               <a href={`#${item.link}`}>{item.text}</a>
             </li>
           ))}
@@ -14,8 +18,12 @@ export default function Hero({ hero }) {
       </nav>
       <div className="flex flex-col items-center md:flex-row-reverse md:gap-6 md:justify-between md:w-full">
         <div className="relative pt-15 max-w-lg w-[70%] md:w-auto">
-          <img src={hero.image} className="md:max-h-100 md:w-full" alt="" />
-          <div className="absolute top-2 -right-10 md:-right-4">
+          <img
+            src={hero.image}
+            className="aspect-auto md:max-h-100 md:w-full"
+            alt=""
+          />
+          <div className="absolute top-2 -right-10 md:-left-11 ">
             <Sparkles />
           </div>
         </div>
@@ -24,9 +32,10 @@ export default function Hero({ hero }) {
             {hero.subtitle}
           </h1>
           <p className="border-l pl-2">{hero.description}</p>
-          <button className="px-15 mt-6 py-3 bg-stone-600">
-            {hero.buttonText}
-          </button>
+          <Button
+            text={hero.buttonText}
+            style="bg-stone-600 hover:bg-stone-500 mt-6"
+          />
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 export default function About({ about }) {
   return (
-    <section id="about" className="flex flex-col gap-6 ">
-      <div className="flex justify-between items-center pr-6 lg:pr-12">
-        <div className="h-0.5 w-[10%] md:w-50 bg-stone-400"></div>
-        <h2 className="self-end font-bold text-stone-400 text-7xl lg:text-8xl font-heading">
+    <section id="about" className="flex flex-col gap-6">
+      <div className="flex flex-row-reverse md:flex-col pb-4 justify-between gap-4 items-center ">
+        <h2 className="self-end font-bold text-stone-400 text-7xl lg:text-8xl pr-6 lg:pr-12 font-heading">
           {about.heading}
         </h2>
+        <div className="w-[8%] md:self-end h-0.5 md:w-60 bg-stone-400"></div>
       </div>
 
       <div className="px-6 lg:px-12 flex flex-col md:flex-row-reverse md:gap-10">
@@ -19,7 +19,7 @@ export default function About({ about }) {
 
           <ul className="w-fit flex flex-col sm:flex-row gap-3 sm:w-full lg:max-w-4xl justify-between ">
             {about.items.map((item) => (
-              <li className="border-l pb-1 px-2 border-stone-400">
+              <li key={item.id} className="border-l pb-1 px-2 border-stone-400">
                 <p className="text-3xl font-heading font-bold text-stone-400">
                   {item.title}
                 </p>

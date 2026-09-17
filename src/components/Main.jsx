@@ -4,7 +4,6 @@ import Contacts from "./Contacts";
 import Hero from "./Hero";
 import Price from "./Price";
 import Works from "./Works";
-//unused: hero: name, title;;
 
 export default function Main() {
   return (
