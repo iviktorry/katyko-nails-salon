@@ -14,7 +14,7 @@ export default function Main() {
         <Works works={works} />
       </div>
       <Price price={price} />
-      <div className="py-4 bg-white">
+      <div className="py-8 bg-white">
         <Contacts contacts={contacts} />
       </div>
     </main>

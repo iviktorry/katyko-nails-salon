@@ -12,13 +12,13 @@ export default function Price() {
         <h2 className="font-bold text-white text-7xl lg:text-8xl font-heading">
           {t("price.heading")}
         </h2>
-      </div>
-      <ul className="grid gap-3 lg:grid-cols-2 lg:justify-between lg:gap-x-10 lg:max-w-5xl w-full px-6 lg:px-0 py-10 text-stone-600">
+      </div> 
+      <ul className="grid gap-3 lg:max-w-5xl w-full px-2 lg:px-0 py-10 text-stone-600">
         {items.map((item) => (
-          <li key={item.id} className="flex justify-between items-center gap-4">
+          <li key={item.id} className="border-b border-stone-600 md:border-none flex justify-between items-center gap-2">
             <span>{item.service}</span>
-            <div className="h-px bg-stone-600 w-full flex-1"></div>
-            <span>{item.price}</span>
+            <div className="h-px bg-stone-600 invisible md:visible w-full flex-1"></div>
+            <span className="whitespace-nowrap">{item.price}</span>
           </li>
         ))}
       </ul>

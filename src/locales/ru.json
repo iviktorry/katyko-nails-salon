@@ -121,6 +121,15 @@
       { "id": 2, "source": "Telegram", "link": "https://t.me/Katyko_nails" }
     ],
     "city": "Минск, Беларусь",
-    "text": "Запишитесь через удобный мессенджер"
+    "text": "Запишитесь через удобный мессенджер",
+    "form": {
+      "heading": "Остались вопросы? Напишите нам",
+      "nameLabel": "Имя",
+      "namePlaceholder": "Имя",
+      "emailLabel": "Email",
+      "emailPlaceholder": "vv@gmail.com",
+      "messageLabel": "Ваш вопрос",
+      "buttonText": "Отправить"
+    }
   }
 }

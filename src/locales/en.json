@@ -49,18 +49,66 @@
   "price": {
     "heading": "Price",
     "items": [
-      { "id": 1, "service": "Hardware / combined manicure (women & men)", "price": "45 BYN" },
-      { "id": 2, "service": "Manicure with regular nail polish", "price": "50 BYN" },
-      { "id": 3, "service": "Manicure with long-lasting coating (by length)", "price": "65–70 BYN" },
-      { "id": 4, "service": "Nail extension with long-lasting coating (up to 3 mm)", "price": "80 BYN" },
-      { "id": 5, "service": "Nail extension with long-lasting coating (over 3 mm)", "price": "90 BYN" },
-      { "id": 6, "service": "Children's manicure (up to 14 years)", "price": "35 BYN" },
-      { "id": 7, "service": "Pedicure — express (toe treatment)", "price": "55 BYN" },
-      { "id": 8, "service": "Pedicure — express with regular nail polish", "price": "65 BYN" },
-      { "id": 9, "service": "Pedicure — express with long-lasting coating", "price": "70 BYN" },
-      { "id": 10, "service": "Pedicure — smart (toe and foot treatment)", "price": "75 BYN" },
-      { "id": 11, "service": "Pedicure — smart with regular nail polish", "price": "80 BYN" },
-      { "id": 12, "service": "Pedicure — smart with long-lasting coating", "price": "90 BYN" }
+      {
+        "id": 1,
+        "service": "Hardware / combined manicure (women & men)",
+        "price": "45 BYN"
+      },
+      {
+        "id": 2,
+        "service": "Manicure with regular nail polish",
+        "price": "50 BYN"
+      },
+      {
+        "id": 3,
+        "service": "Manicure with long-lasting coating (by length)",
+        "price": "65–70 BYN"
+      },
+      {
+        "id": 4,
+        "service": "Nail extension with long-lasting coating (up to 3 mm)",
+        "price": "80 BYN"
+      },
+      {
+        "id": 5,
+        "service": "Nail extension with long-lasting coating (over 3 mm)",
+        "price": "90 BYN"
+      },
+      {
+        "id": 6,
+        "service": "Children's manicure (up to 14 years)",
+        "price": "35 BYN"
+      },
+      {
+        "id": 7,
+        "service": "Pedicure — express (toe treatment)",
+        "price": "55 BYN"
+      },
+      {
+        "id": 8,
+        "service": "Pedicure — express with regular nail polish",
+        "price": "65 BYN"
+      },
+      {
+        "id": 9,
+        "service": "Pedicure — express with long-lasting coating",
+        "price": "70 BYN"
+      },
+      {
+        "id": 10,
+        "service": "Pedicure — smart (toe and foot treatment)",
+        "price": "75 BYN"
+      },
+      {
+        "id": 11,
+        "service": "Pedicure — smart with regular nail polish",
+        "price": "80 BYN"
+      },
+      {
+        "id": 12,
+        "service": "Pedicure — smart with long-lasting coating",
+        "price": "90 BYN"
+      }
     ],
     "note": "10% discount for first visit",
     "buttonText": "Book now"
@@ -77,6 +125,15 @@
       { "id": 2, "source": "Telegram", "link": "https://t.me/Katyko_nails" }
     ],
     "city": "Minsk, Belarus",
-    "text": "Book via options below"
+    "text": "Book via links below",
+    "form": {
+      "heading": "Any questions? Contact us",
+      "nameLabel": "Name",
+      "namePlaceholder": "Aa",
+      "emailLabel": "Email",
+      "emailPlaceholder": "vv@gmail.com",
+      "messageLabel": "What's your question?",
+      "buttonText": "Send"
+    }
   }
 }
