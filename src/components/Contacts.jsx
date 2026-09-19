@@ -44,7 +44,7 @@ export default function Contacts() {
   const { t } = useTranslation();
   const items = t("contacts.items", { returnObjects: true });
   const style =
-    "ring hover:ring-2 ring-stone-400 pl-2 transition-all duration-300 ease-in-out";
+    "ring hover:ring-2 ring-stone-400 pl-2 outline-0 focus:ring-[#996c4b] focus:ring-2 transition-all duration-300 ease-in-out";
 
   return (
     <section
@@ -88,8 +88,9 @@ export default function Contacts() {
             <input
               type="text"
               name="name"
-              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
+              className={`placeholder:text-sm h-7 mt-1 text-stone-600 ${style}`}
               placeholder={t("contacts.form.namePlaceholder")}
+              required
             />
           </label>
           <label className="flex flex-col flex-1 pb-2 min-w-1 text-sm ">
@@ -97,8 +98,9 @@ export default function Contacts() {
             <input
               type="email"
               name="email"
-              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
+              className={`placeholder:text-sm h-7 mt-1 text-stone-600 ${style}`}
               placeholder={t("contacts.form.emailPlaceholder")}
+              required
             />
           </label>
         </div>
@@ -107,7 +109,8 @@ export default function Contacts() {
             {t("contacts.form.messageLabel")}
             <textarea
               name="message"
-              className={`resize-none mt-1 h-13 pt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
+              className={`border-0 resize-none mt-1 h-13 pt-1 text-stone-600 ${style}`}
+              required
             />
           </label>
           <div className="relative w-fit">
@@ -115,23 +118,19 @@ export default function Contacts() {
               text={t("contacts.form.buttonText")}
               style="bg-stone-400 ring ring-stone-400 hover:bg-stone-300 h-13 text-base lg:text-lg"
             />
-            <p
+            <div
+              role="status"
+              aria-live="polite"
               className={`flex items-center whitespace-nowrap gap-2 absolute font-semibold text-sm lg:text-base px-2 py-1 left-1/2 -translate-x-1/2 bg-stone-100 text-stone-400 shadow-md shadow-stone-600/30 transition-all duration-300 ease-out ${
                 result === "Success"
                   ? "opacity-100 -top-12 translate-y-0"
                   : "opacity-0 top-1 translate-y-2 pointer-events-none"
               }`}
             >
-              <CircleCheck className="" />
-              {t("contacts.form.messageSent")}
-            </p>
+              <CircleCheck />
+              <span>{t("contacts.form.messageSent")}</span>
+            </div>
           </div>
-
-          <p className="sr-only" aria-live="polite">
-            {result === "Success"
-              ? t("contacts.form.successMessage")
-              : t("contacts.form.errorMessage")}
-          </p>
         </div>
       </form>
     </section>

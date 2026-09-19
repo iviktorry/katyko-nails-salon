@@ -134,9 +134,7 @@
       "emailPlaceholder": "eg. johndoe@gmail.com",
       "messageLabel": "Your message",
       "buttonText": "Send",
-      "messageSent": "Message was send",
-      "successMessage": "Your message has been send successfully",
-      "errorMessage": "An error occurred while submitting form"
+      "messageSent": "Message was send"
     }
   }
 }
