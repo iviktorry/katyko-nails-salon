@@ -123,13 +123,15 @@
     "city": "Минск, Беларусь",
     "text": "Запишитесь через удобный мессенджер",
     "form": {
-      "heading": "Остались вопросы? Напишите нам",
-      "nameLabel": "Имя",
-      "namePlaceholder": "Имя",
+      "heading": "Остались вопросы? Напишите мне",
+      "nameLabel": "Полное имя",
+      "namePlaceholder": "прим. Екатерина",
       "emailLabel": "Email",
-      "emailPlaceholder": "vv@gmail.com",
+      "emailPlaceholder": "прим. johndoe@gmail.com",
       "messageLabel": "Ваш вопрос",
-      "buttonText": "Отправить"
+      "buttonText": "Отправить",
+      "successMessage": "Ваша форма была успешно отправлена",
+      "errorMessage": "При отправке формы произошла ошибка"
     }
   }
 }

@@ -127,13 +127,15 @@
     "city": "Minsk, Belarus",
     "text": "Book via links below",
     "form": {
-      "heading": "Any questions? Contact us",
-      "nameLabel": "Name",
-      "namePlaceholder": "Aa",
-      "emailLabel": "Email",
-      "emailPlaceholder": "vv@gmail.com",
-      "messageLabel": "What's your question?",
-      "buttonText": "Send"
+      "heading": "Any questions? Contact me",
+      "nameLabel": "Full name",
+      "namePlaceholder": "eg. Ekaterina",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "eg. johndoe@gmail.com",
+      "messageLabel": "Your message",
+      "buttonText": "Send",
+      "successMessage": "Your form has been send successfully",
+      "errorMessage": "An error occurred while submitting form"
     }
   }
 }
