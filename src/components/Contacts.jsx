@@ -1,14 +1,19 @@
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { CircleCheck } from "lucide-react";
 
 export default function Contacts() {
-  const { t } = useTranslation();
-  const items = t("contacts.items", { returnObjects: true });
-  const style =
-    "ring hover:ring-2 ring-stone-400 text-stone-600 pl-2 transition-all duration-300 ease-in-out";
-
   const [result, setResult] = useState("");
+
+  useEffect(() => {
+    if (result === "Success") {
+      const timer = setTimeout(() => {
+        setResult("");
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [result]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -35,6 +40,12 @@ export default function Contacts() {
       console.error(error);
     }
   };
+
+  const { t } = useTranslation();
+  const items = t("contacts.items", { returnObjects: true });
+  const style =
+    "ring hover:ring-2 ring-stone-400 pl-2 transition-all duration-300 ease-in-out";
+
   return (
     <section
       id="contacts"
@@ -77,7 +88,7 @@ export default function Contacts() {
             <input
               type="text"
               name="name"
-              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 ${style}`}
+              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
               placeholder={t("contacts.form.namePlaceholder")}
             />
           </label>
@@ -86,23 +97,36 @@ export default function Contacts() {
             <input
               type="email"
               name="email"
-              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 ${style}`}
+              className={`placeholder:text-sm h-7 mt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
               placeholder={t("contacts.form.emailPlaceholder")}
             />
           </label>
         </div>
-        <div className="lg:mt-2 flex gap-4 flex-col sm:flex-row sm:items-end">
+        <div className="relative lg:mt-2 flex gap-4 flex-col sm:flex-row sm:items-end">
           <label className="flex-1 flex flex-col text-sm">
             {t("contacts.form.messageLabel")}
             <textarea
               name="message"
-              className={`resize-none mt-1 h-13 pt-1 focus:outline-0 focus:ring-stone-600 ${style}`}
+              className={`resize-none mt-1 h-13 pt-1 focus:outline-0 focus:ring-stone-600 text-stone-600 ${style}`}
             />
           </label>
-          <Button
-            text={t("contacts.form.buttonText")}
-            style="bg-stone-400 ring ring-stone-400 hover:bg-stone-300 h-13 text-base lg:text-lg"
-          />
+          <div className="relative w-fit">
+            <Button
+              text={t("contacts.form.buttonText")}
+              style="bg-stone-400 ring ring-stone-400 hover:bg-stone-300 h-13 text-base lg:text-lg"
+            />
+            <p
+              className={`flex items-center whitespace-nowrap gap-2 absolute font-semibold text-sm lg:text-base px-2 py-1 left-1/2 -translate-x-1/2 bg-stone-100 text-stone-400 shadow-md shadow-stone-600/30 transition-all duration-300 ease-out ${
+                result === "Success"
+                  ? "opacity-100 -top-12 translate-y-0"
+                  : "opacity-0 top-1 translate-y-2 pointer-events-none"
+              }`}
+            >
+              <CircleCheck className="" />
+              {t("contacts.form.messageSent")}
+            </p>
+          </div>
+
           <p className="sr-only" aria-live="polite">
             {result === "Success"
               ? t("contacts.form.successMessage")

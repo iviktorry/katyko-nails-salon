@@ -130,6 +130,7 @@
       "emailPlaceholder": "прим. johndoe@gmail.com",
       "messageLabel": "Ваш вопрос",
       "buttonText": "Отправить",
+      "messageSent": "Сообщение отправлено",
       "successMessage": "Ваша форма была успешно отправлена",
       "errorMessage": "При отправке формы произошла ошибка"
     }
