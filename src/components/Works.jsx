@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
 import LightBox from "yet-another-react-lightbox";
@@ -9,15 +9,29 @@ export default function Works({ works }) {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
+  const sectionRef = useRef(null);
+  const { t } = useTranslation();
+
   const slides = works.items.map((item) => ({
     src: item.image,
     alt: item.alt,
   }));
 
-  const { t } = useTranslation();
+  function handleToggleShowAll() {
+    if (showAll) {
+      setShowAll(false);
+      sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      setShowAll(true);
+    }
+  }
 
   return (
-    <section id="works" className="flex flex-col items-center gap-6 px-6 pt-8">
+    <section
+      id="works"
+      ref={sectionRef}
+      className="flex flex-col items-center gap-6 px-6 pt-8 lg:px-12"
+    >
       <h2 className="font-heading self-start text-7xl font-bold text-stone-400 lg:text-8xl">
         {t("works.heading")}
       </h2>
@@ -39,8 +53,7 @@ export default function Works({ works }) {
                 setIndex(index);
                 setIsOpen(true);
               }}
-              className={`${getColumnsNumber} aspect-3/4 self-center overflow-hidden object-cover`}
-              // max-w-45 md:max-h-60 lg:max-w-60 lg:max-h-80
+              className={` ${getColumnsNumber} aspect-3/4 animate-[slideDown_0.3s_ease-out] cursor-pointer self-center overflow-hidden object-cover`}
             >
               <img
                 src={item.image}
@@ -52,7 +65,7 @@ export default function Works({ works }) {
         })}
       </div>
       <Button
-        onClick={() => setShowAll((prev) => !prev)}
+        onClick={() => handleToggleShowAll()}
         text={
           showAll ? t("works.buttonTextOpened") : t("works.buttonTextClosed")
         }
