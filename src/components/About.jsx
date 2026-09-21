@@ -5,26 +5,26 @@ export default function About({ about }) {
   const items = t("about.items", { returnObjects: true });
   return (
     <section id="about" className="flex flex-col gap-6">
-      <div className="flex flex-row-reverse md:flex-col pb-4 justify-between gap-4 items-center ">
-        <h2 className="self-end font-bold text-stone-400 text-7xl lg:text-8xl pr-6 lg:pr-12 font-heading">
+      <div className="flex flex-row-reverse items-center justify-between gap-4 pb-4 md:flex-col">
+        <h2 className="font-heading self-end pr-6 text-7xl font-bold text-stone-400 lg:pr-12 lg:text-8xl">
           {t("about.heading")}
         </h2>
-        <div className="w-[8%] md:self-end h-0.5 md:w-60 bg-stone-400"></div>
+        <div className="h-0.5 w-[8%] bg-stone-400 md:w-60 md:self-end"></div>
       </div>
 
-      <div className="px-6 lg:px-12 flex flex-col md:items-start md:flex-row-reverse md:gap-10">
+      <div className="flex flex-col px-6 md:flex-row-reverse md:items-start md:gap-10 lg:px-12">
         <img
           src={about.photo}
-          className="w-60 sm:w-70 md:w-60 self-start"
+          className="w-60 self-start sm:w-70 md:w-60"
           alt=""
         />
         <div className="flex flex-col justify-center gap-4 md:gap-12">
-          <p className="pt-8 self-start pr-8 md:p-0">{t("about.text")}</p>
+          <p className="self-start pt-8 pr-8 md:p-0">{t("about.text")}</p>
 
-          <ul className="w-fit flex flex-col sm:flex-row gap-3 sm:w-full lg:max-w-4xl justify-between ">
+          <ul className="flex w-fit flex-col justify-between gap-3 sm:w-full sm:flex-row lg:max-w-4xl">
             {items.map((item) => (
-              <li key={item.id} className="border-l pb-1 px-2 border-stone-400">
-                <p className="text-3xl font-heading font-bold text-stone-400">
+              <li key={item.id} className="border-l border-stone-400 px-2 pb-1">
+                <p className="font-heading text-3xl font-bold text-stone-400">
                   {item.title}
                 </p>
                 <p>{item.text}</p>

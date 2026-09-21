@@ -7,14 +7,14 @@ export default function Hero({ hero }) {
   const { t } = useTranslation();
   const items = t("hero.navigation", { returnObjects: true });
   return (
-    <section className=" pb-8 flex flex-col gap-0 items-center ">
-      <div className="flex justify-between w-full">
+    <section className="flex flex-col items-center gap-0 pb-8">
+      <div className="flex w-full justify-between">
         <nav className="md:self-end">
           <ul className="flex justify-center gap-4">
             {items.map((item) => (
               <li
                 key={item.link}
-                className="hover:scale-107 transition-all deration-300"
+                className="deration-300 transition-all hover:scale-107"
               >
                 <a href={`#${item.link}`}>{item.text}</a>
               </li>
@@ -23,19 +23,19 @@ export default function Hero({ hero }) {
         </nav>
         <LanguageSwitcher />
       </div>
-      <div className="flex flex-col items-center md:flex-row-reverse md:gap-6 md:justify-between md:w-full">
-        <div className="relative pt-15 max-w-lg w-[70%] md:w-auto">
+      <div className="flex flex-col items-center md:w-full md:flex-row-reverse md:justify-between md:gap-6">
+        <div className="relative w-[70%] max-w-lg pt-15 md:w-auto">
           <img
             src={hero.image}
             className="aspect-auto md:max-h-100 md:w-full"
             alt=""
           />
-          <div className="absolute top-2 -right-10 md:-left-11 ">
+          <div className="absolute top-2 -right-10 md:-left-11">
             <Sparkles />
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start">
-          <h1 className="text-7xl lg:text-8xl relative self-start pl-2 -top-11 max-w-[90%] md:p-0 md:top-0 md:pb-4 font-bold font-heading">
+          <h1 className="font-heading relative -top-11 max-w-[90%] self-start pl-2 text-7xl font-bold md:top-0 md:p-0 md:pb-4 lg:text-8xl">
             {t("hero.subtitle")}
           </h1>
           <p className="border-l pl-2">{t("hero.description")}</p>

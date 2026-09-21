@@ -17,11 +17,11 @@ export default function Works({ works }) {
   const { t } = useTranslation();
 
   return (
-    <section id="works" className="px-6 pt-8 flex flex-col items-center gap-6">
-      <h2 className="self-start font-bold text-stone-400 text-7xl font-heading lg:text-8xl">
+    <section id="works" className="flex flex-col items-center gap-6 px-6 pt-8">
+      <h2 className="font-heading self-start text-7xl font-bold text-stone-400 lg:text-8xl">
         {t("works.heading")}
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4">
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
         {works.items.map((item, index) => {
           const getColumnsNumber = showAll
             ? "block"
@@ -39,13 +39,13 @@ export default function Works({ works }) {
                 setIndex(index);
                 setIsOpen(true);
               }}
-              className={`${getColumnsNumber} self-center aspect-3/4  object-cover overflow-hidden`}
+              className={`${getColumnsNumber} aspect-3/4 self-center overflow-hidden object-cover`}
               // max-w-45 md:max-h-60 lg:max-w-60 lg:max-h-80
             >
               <img
                 src={item.image}
                 alt={item.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-all duration-300"
+                className="h-full w-full object-cover transition-all duration-300 hover:scale-105"
               />
             </div>
           );

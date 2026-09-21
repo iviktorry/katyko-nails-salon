@@ -49,24 +49,24 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="flex flex-col gap-8 lg:flex-row text-stone-400"
+      className="flex flex-col gap-8 text-stone-400 lg:flex-row"
     >
       <div className="flex-1">
-        <div className="flex flex-col w-full md:text-left">
-          <h2 className="px-6 xl:pr-0 lg:pl-12 self-start font-bold text-stone-400 text-7xl lg:text-8xl font-heading">
+        <div className="flex w-full flex-col md:text-left">
+          <h2 className="font-heading self-start px-6 text-7xl font-bold text-stone-400 lg:pl-12 lg:text-8xl xl:pr-0">
             {t("contacts.heading")}
           </h2>
-          <div className="h-0.5 mt-3 mb-5 w-40 bg-stone-400 self-end md:self-start md:w-50"></div>
+          <div className="mt-3 mb-5 h-0.5 w-40 self-end bg-stone-400 md:w-50 md:self-start"></div>
         </div>
 
-        <div className="flex flex-col px-6 lg:pr-0 xl:pl-12 w-full">
+        <div className="flex w-full flex-col px-6 lg:pr-0 xl:pl-12">
           <p>{t("contacts.city")}</p>
           <p>{t("contacts.text")}</p>
-          <ul className="pt-1 w-full flex flex-col gap-4">
+          <ul className="flex w-full flex-col gap-4 pt-1">
             {items.map((item) => (
               <li
                 key={item.id}
-                className={`w-full py-3 text-left px-3 ${style}`}
+                className={`w-full px-3 py-3 text-left ${style}`}
               >
                 <a href={item.link} className="min-size-full">
                   {item.source}
@@ -79,37 +79,37 @@ export default function Contacts() {
 
       <form
         onSubmit={onSubmit}
-        className="flex-1 min-w-1 w-full px-6 lg:pl-0 xl:pr-12 self-end"
+        className="w-full min-w-1 flex-1 self-end px-6 lg:pl-0 xl:pr-12"
       >
         <p>{t("contacts.form.heading")}</p>
         <div className="flex flex-col md:flex-row md:gap-4">
-          <label className="flex flex-col flex-1 pb-2 min-w-1 text-sm ">
+          <label className="flex min-w-1 flex-1 flex-col pb-2 text-sm">
             {t("contacts.form.nameLabel")}
             <input
               type="text"
               name="name"
-              className={`placeholder:text-sm h-7 mt-1 text-stone-600 ${style}`}
+              className={`mt-1 h-7 text-stone-600 placeholder:text-sm ${style}`}
               placeholder={t("contacts.form.namePlaceholder")}
               required
             />
           </label>
-          <label className="flex flex-col flex-1 pb-2 min-w-1 text-sm ">
+          <label className="flex min-w-1 flex-1 flex-col pb-2 text-sm">
             {t("contacts.form.emailLabel")}
             <input
               type="email"
               name="email"
-              className={`placeholder:text-sm h-7 mt-1 text-stone-600 ${style}`}
+              className={`mt-1 h-7 text-stone-600 placeholder:text-sm ${style}`}
               placeholder={t("contacts.form.emailPlaceholder")}
               required
             />
           </label>
         </div>
-        <div className="relative lg:mt-2 flex gap-4 flex-col sm:flex-row sm:items-end">
-          <label className="flex-1 flex flex-col text-sm">
+        <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end lg:mt-2">
+          <label className="flex flex-1 flex-col text-sm">
             {t("contacts.form.messageLabel")}
             <textarea
               name="message"
-              className={`border-0 resize-none mt-1 h-13 pt-1 text-stone-600 ${style}`}
+              className={`mt-1 h-13 resize-none border-0 pt-1 text-stone-600 ${style}`}
               required
             />
           </label>
@@ -121,10 +121,10 @@ export default function Contacts() {
             <div
               role="status"
               aria-live="polite"
-              className={`flex items-center whitespace-nowrap gap-2 absolute font-semibold text-sm lg:text-base px-2 py-1 left-1/2 -translate-x-1/2 bg-stone-100 text-stone-400 shadow-md shadow-stone-600/30 transition-all duration-300 ease-out ${
+              className={`absolute left-1/2 flex -translate-x-1/2 items-center gap-2 bg-stone-100 px-2 py-1 text-sm font-semibold whitespace-nowrap text-stone-400 shadow-md shadow-stone-600/30 transition-all duration-300 ease-out lg:text-base ${
                 result === "Success"
-                  ? "opacity-100 -top-12 translate-y-0"
-                  : "opacity-0 top-1 translate-y-2 pointer-events-none"
+                  ? "-top-12 translate-y-0 opacity-100"
+                  : "pointer-events-none top-1 translate-y-2 opacity-0"
               }`}
             >
               <CircleCheck />
