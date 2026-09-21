@@ -39,8 +39,7 @@
       { "id": 9, "image": "/images/work9.jpg", "alt": "Nail design 9" },
       { "id": 10, "image": "/images/work10.jpg", "alt": "Nail design 10" },
       { "id": 11, "image": "/images/work11.jpg", "alt": "Nail design 11" },
-      { "id": 12, "image": "/images/work12.jpg", "alt": "Nail design 12" },
-      { "id": 13, "image": "/images/work13.jpg", "alt": "Nail design 13" }
+      { "id": 12, "image": "/images/work12.jpg", "alt": "Nail design 12" }
     ],
     "buttonTextClosed": "Show more",
     "buttonTextOpened": "Show less"
