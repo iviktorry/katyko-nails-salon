@@ -1,10 +1,20 @@
 import { useState } from "react";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
+import LightBox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Works({ works }) {
-  const { t } = useTranslation();
   const [showAll, setShowAll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const slides = works.items.map((item) => ({
+    src: item.image,
+    alt: item.alt,
+  }));
+
+  const { t } = useTranslation();
 
   return (
     <section id="works" className="px-6 pt-8 flex flex-col items-center gap-6">
@@ -25,6 +35,10 @@ export default function Works({ works }) {
           return (
             <div
               key={item.id}
+              onClick={() => {
+                setIndex(index);
+                setIsOpen(true);
+              }}
               className={`${getColumnsNumber} self-center aspect-3/4  object-cover overflow-hidden`}
               // max-w-45 md:max-h-60 lg:max-w-60 lg:max-h-80
             >
@@ -43,6 +57,13 @@ export default function Works({ works }) {
           showAll ? t("works.buttonTextOpened") : t("works.buttonTextClosed")
         }
         style="text-white bg-stone-400 hover:bg-stone-300"
+      />
+
+      <LightBox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        index={index}
+        slides={slides}
       />
     </section>
   );
