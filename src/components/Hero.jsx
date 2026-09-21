@@ -41,6 +41,7 @@ export default function Hero({ hero }) {
           <p className="border-l pl-2">{t("hero.description")}</p>
           <Button
             text={t("hero.buttonText")}
+            link="#contacts"
             style="bg-stone-600 hover:bg-stone-500 mt-6"
           />
         </div>

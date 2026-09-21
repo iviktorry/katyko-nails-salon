@@ -81,32 +81,32 @@
       },
       {
         "id": 7,
-        "service": "Pedicure — express (toe treatment)",
+        "service": "Express pedicure (toe treatment)",
         "price": "55 BYN"
       },
       {
         "id": 8,
-        "service": "Pedicure — express with regular nail polish",
+        "service": "Express pedicure with regular nail polish",
         "price": "65 BYN"
       },
       {
         "id": 9,
-        "service": "Pedicure — express with long-lasting coating",
+        "service": "Express pedicure with long-lasting coating",
         "price": "70 BYN"
       },
       {
         "id": 10,
-        "service": "Pedicure — smart (toe and foot treatment)",
+        "service": "Smart pedicure (toe and foot treatment)",
         "price": "75 BYN"
       },
       {
         "id": 11,
-        "service": "Pedicure — smart with regular nail polish",
+        "service": "Smart pedicure with regular nail polish",
         "price": "80 BYN"
       },
       {
         "id": 12,
-        "service": "Pedicure — smart with long-lasting coating",
+        "service": "Smart pedicure with long-lasting coating",
         "price": "90 BYN"
       }
     ],
