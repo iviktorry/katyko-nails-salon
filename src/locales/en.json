@@ -18,6 +18,7 @@
     "heading": "About me",
     "text": "Hi! My name is Ekaterina. I have been doing nails for 7 years — it all started when my daughter mentioned that girls in her class were getting their nails done. What began as a hobby turned into my calling. I worked from home, then opened my own salon, and now I have a cozy private studio with everything needed for a perfect result. I use only sterilized instruments and professional materials.",
     "photo": "/images/about.jpg",
+    "alt": "Ekaterina's photo",
     "items": [
       { "id": 1, "title": "7+", "text": "years of experience" },
       { "id": 2, "title": "50+", "text": "loyal clients" },
