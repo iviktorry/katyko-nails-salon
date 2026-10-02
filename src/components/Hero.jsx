@@ -8,9 +8,9 @@ export default function Hero({ hero }) {
   const items = t("hero.navigation", { returnObjects: true });
   return (
     <section className="flex flex-col items-center gap-0 pb-8">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-between gap-2">
         <nav className="md:self-end">
-          <ul className="flex justify-center gap-4">
+          <ul className="flex gap-4">
             {items.map((item) => (
               <li
                 key={item.link}
@@ -24,18 +24,16 @@ export default function Hero({ hero }) {
         <LanguageSwitcher />
       </div>
       <div className="flex flex-col items-center md:w-full md:flex-row-reverse md:justify-between md:gap-6">
-        <div className="relative w-[70%] max-w-lg pt-15 md:w-auto">
-          <img
-            src={hero.image}
-            className="aspect-auto md:max-h-100 md:w-full"
-            alt=""
-          />
-          <div className="absolute top-2 -right-10 md:-left-11">
-            <Sparkles />
+        <div className="flex w-[70%] max-w-lg flex-col items-center pt-15 md:w-auto">
+          <div className="relative aspect-66/100 max-w-79.5 md:w-58 lg:w-65">
+            <img src={hero.image} className="size-full" alt="" />
+            <div className="absolute -top-10 -right-9 md:-left-9 lg:-top-12 lg:-left-12">
+              <Sparkles />
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start">
-          <h1 className="font-heading relative -top-11 max-w-[90%] self-start pl-2 text-7xl font-bold md:top-0 md:p-0 md:pb-4 lg:text-8xl">
+          <h1 className="font-heading relative -top-11 max-w-[90%] self-start text-7xl font-bold md:top-0 md:pb-4 lg:text-8xl">
             {t("hero.subtitle")}
           </h1>
           <p className="border-l pl-2">{t("hero.description")}</p>

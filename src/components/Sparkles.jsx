@@ -1,10 +1,10 @@
 export default function Sparkles() {
   return (
-    <div className="relative h-23 w-23">
+    <div className="relative size-18 lg:size-23">
       <svg
         viewBox="0 0 24 24"
         fill="none"
-        className="h-23 w-23 text-white"
+        className="size-18 text-white lg:size-23"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -15,7 +15,7 @@ export default function Sparkles() {
       <svg
         viewBox="0 0 24 24"
         fill="none"
-        className="absolute -right-2 -bottom-5 h-10 w-10 text-stone-600"
+        className="absolute -right-4 -bottom-3 size-8 text-stone-600 lg:-right-2 lg:-bottom-5 lg:size-10"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

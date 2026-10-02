@@ -53,7 +53,7 @@ export default function Contacts() {
     >
       <div className="flex-1">
         <div className="flex w-full flex-col md:text-left">
-          <h2 className="font-heading self-start px-6 text-7xl font-bold text-stone-400 lg:pl-12 lg:text-8xl xl:pr-0">
+          <h2 className="font-heading self-start pl-6 text-6xl font-bold text-stone-400 sm:text-7xl lg:pl-12 lg:text-8xl xl:pr-0">
             {t("contacts.heading")}
           </h2>
           <div className="mt-3 mb-5 h-0.5 w-40 self-end bg-stone-400 md:w-50 md:self-start"></div>
@@ -116,7 +116,7 @@ export default function Contacts() {
           <div className="relative w-fit">
             <Button
               text={t("contacts.form.buttonText")}
-              style="bg-stone-400 ring ring-stone-400 hover:bg-stone-300 h-13 text-base lg:text-lg"
+              style="bg-stone-400 ring hover:bg-stone-300 ring-stone-400 h-13 text-base lg:text-lg"
             />
             <div
               role="status"

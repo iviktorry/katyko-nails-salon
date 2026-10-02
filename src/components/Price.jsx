@@ -9,7 +9,7 @@ export default function Price() {
     <section id="price" className="flex flex-col items-center pt-4 pb-8">
       <div className="flex w-full justify-between pl-4">
         <Sparkles />
-        <h2 className="font-heading text-7xl font-bold text-white lg:text-8xl">
+        <h2 className="font-heading text-6xl font-bold text-white sm:text-7xl lg:text-8xl">
           {t("price.heading")}
         </h2>
       </div>

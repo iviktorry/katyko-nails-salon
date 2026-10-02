@@ -32,7 +32,7 @@ export default function Works({ works }) {
       ref={sectionRef}
       className="flex flex-col items-center gap-6 px-6 pt-8 lg:px-12"
     >
-      <h2 className="font-heading self-start text-7xl font-bold text-stone-400 lg:text-8xl">
+      <h2 className="font-heading self-start text-6xl font-bold text-stone-400 sm:text-7xl lg:text-8xl">
         {t("works.heading")}
       </h2>
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
