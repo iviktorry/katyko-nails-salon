@@ -30,7 +30,7 @@ export default function Works({ works }) {
     <section
       id="works"
       ref={sectionRef}
-      className="flex flex-col items-center gap-6 px-6 pt-8 lg:px-12"
+      className="flex flex-col items-center gap-6 px-4 pt-8 sm:px-6 lg:px-12"
     >
       <h2 className="font-heading self-start text-6xl font-bold text-stone-400 sm:text-7xl lg:text-8xl">
         {t("works.heading")}

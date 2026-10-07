@@ -7,9 +7,9 @@ import Works from "./Works";
 
 export default function Main() {
   return (
-    <main className="font-text h-full px-4 py-4 font-light text-white md:px-14 lg:text-lg">
+    <main className="font-text h-full px-4 py-4 text-white md:px-14 lg:text-lg">
       <Hero hero={hero} />
-      <div className="bg-white py-8 text-stone-600">
+      <div className="bg-white py-8 text-stone-400">
         <About about={about} />
         <Works works={works} />
       </div>

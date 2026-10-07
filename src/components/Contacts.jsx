@@ -53,13 +53,13 @@ export default function Contacts() {
     >
       <div className="flex-1">
         <div className="flex w-full flex-col md:text-left">
-          <h2 className="font-heading self-start pl-6 text-6xl font-bold text-stone-400 sm:text-7xl lg:pl-12 lg:text-8xl xl:pr-0">
+          <h2 className="font-heading self-start pl-4 text-6xl font-bold sm:pl-6 sm:text-7xl lg:pl-12 lg:text-8xl xl:pr-0">
             {t("contacts.heading")}
           </h2>
           <div className="mt-3 mb-5 h-0.5 w-40 self-end bg-stone-400 md:w-50 md:self-start"></div>
         </div>
 
-        <div className="flex w-full flex-col px-6 lg:pr-0 xl:pl-12">
+        <div className="flex w-full flex-col px-4 sm:px-6 lg:pr-0 lg:pl-12">
           <p>{t("contacts.city")}</p>
           <p>{t("contacts.text")}</p>
           <ul className="flex w-full flex-col gap-4 pt-1">
@@ -79,11 +79,11 @@ export default function Contacts() {
 
       <form
         onSubmit={onSubmit}
-        className="w-full min-w-1 flex-1 self-end px-6 lg:pl-0 xl:pr-12"
+        className="w-full min-w-1 flex-1 self-end px-4 sm:px-6 lg:pr-12 lg:pl-0"
       >
         <p>{t("contacts.form.heading")}</p>
         <div className="flex flex-col md:flex-row md:gap-4">
-          <label className="flex min-w-1 flex-1 flex-col pb-2 text-sm">
+          <label className="flex min-w-1 flex-1 flex-col pb-2 text-base">
             {t("contacts.form.nameLabel")}
             <input
               type="text"
@@ -93,7 +93,7 @@ export default function Contacts() {
               required
             />
           </label>
-          <label className="flex min-w-1 flex-1 flex-col pb-2 text-sm">
+          <label className="flex min-w-1 flex-1 flex-col pb-2 text-base">
             {t("contacts.form.emailLabel")}
             <input
               type="email"
@@ -105,7 +105,7 @@ export default function Contacts() {
           </label>
         </div>
         <div className="relative flex flex-col gap-4 sm:flex-row sm:items-end lg:mt-2">
-          <label className="flex flex-1 flex-col text-sm">
+          <label className="flex flex-1 flex-col text-base">
             {t("contacts.form.messageLabel")}
             <textarea
               name="message"
@@ -121,7 +121,7 @@ export default function Contacts() {
             <div
               role="status"
               aria-live="polite"
-              className={`absolute left-1/2 flex -translate-x-1/2 items-center gap-2 bg-stone-100 px-2 py-1 text-sm font-semibold whitespace-nowrap text-stone-400 shadow-md shadow-stone-600/30 transition-all duration-300 ease-out lg:text-base ${
+              className={`absolute left-1/2 flex -translate-x-1/2 items-center gap-2 bg-stone-100 px-2 py-1 text-sm font-semibold whitespace-nowrap shadow-md shadow-stone-600/30 transition-all duration-300 ease-out lg:text-base ${
                 result === "Success"
                   ? "-top-12 translate-y-0 opacity-100"
                   : "pointer-events-none top-1 translate-y-2 opacity-0"

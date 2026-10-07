@@ -8,15 +8,17 @@ export default function Hero({ hero }) {
   const items = t("hero.navigation", { returnObjects: true });
   return (
     <section className="flex flex-col items-center gap-0 pb-8">
-      <div className="flex w-full justify-between gap-2">
-        <nav className="md:self-end">
-          <ul className="flex gap-4">
+      <div className="flex w-full flex-col justify-between sm:flex-row">
+        <nav className="w-fit md:self-end">
+          <ul className="flex justify-center gap-1.5 sm:gap-0">
             {items.map((item) => (
               <li
                 key={item.link}
-                className="deration-300 transition-all hover:scale-107"
+                className="duration-200 transition-all ease-in-out hover:scale-107"
               >
-                <a href={`#${item.link}`}>{item.text}</a>
+                <a href={`#${item.link}`} className="px-1 sm:px-3 sm:py-2">
+                  {item.text}
+                </a>
               </li>
             ))}
           </ul>

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-stone-600: #714f36;
+  --color-stone-600: #66402D;
   --color-stone-500: #80583b;
-  --color-stone-400: #c5a58e;
+  --color-stone-400: #AB846D;
   --color-stone-300: #d4b39d;
   --color-stone-100: #f3ede8;
 

@@ -7,16 +7,16 @@ export default function LanguageSwitcher() {
     i18n.changeLanguage(lng);
   }
   return (
-    <div className="flex flex-col sm:flex-row sm:gap-4">
+    <div className="flex gap-2">
       <button
         onClick={() => changeLanguage("en")}
-        className={`${i18n.language === "en" ? "font-bold underline" : ""}`}
+        className={`px-2.5 py-1 transition-all duration-200 ease-in-out hover:scale-110 ${i18n.language === "en" ? "underline" : ""}`}
       >
         En
       </button>
       <button
         onClick={() => changeLanguage("ru")}
-        className={`${i18n.language === "ru" ? "font-bold underline" : ""}`}
+        className={`px-2.5 py-1 transition-all duration-200 ease-in-out hover:scale-110 ${i18n.language === "ru" ? "underline" : ""}`}
       >
         Ru
       </button>

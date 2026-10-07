@@ -13,14 +13,14 @@ export default function Price() {
           {t("price.heading")}
         </h2>
       </div>
-      <ul className="grid w-full gap-3 px-2 py-10 text-stone-600 lg:max-w-5xl lg:px-0">
+      <ul className="grid w-full gap-3 py-10 lg:max-w-5xl lg:px-0">
         {items.map((item) => (
           <li
             key={item.id}
-            className="flex items-center justify-between gap-2 border-b border-stone-600 md:border-none"
+            className="flex items-center justify-between gap-2 border-b border-white md:border-none"
           >
             <span>{item.service}</span>
-            <div className="invisible h-px w-full flex-1 bg-stone-600 md:visible"></div>
+            <div className="invisible h-px w-full flex-1 bg-white md:visible"></div>
             <span className="whitespace-nowrap">{item.price}</span>
           </li>
         ))}
